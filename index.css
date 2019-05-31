@@ -1,0 +1,114 @@
+/* #id kalder html tag udfra id. body tag bliver kaldt*/
+#html, body {
+margin: 0;
+height: 100%;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* kalder mobile container class med .class */
+.mobile-container {
+  max-width: 100%;
+  margin: 0;
+  background-color: rgb(247, 255, 255);
+  height: 100vh;
+  /* color tekst farve */
+  color: black;
+  border-radius: 10px;
+  padding: 0;
+
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+#menuButton {
+  width: 82px;
+  height: 86px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#logo {
+  width: 82px;
+  height: 86px;
+}
+#tab {
+
+}
+/* tabs */
+#news {
+  /* display type block bliver vist none bliver ikke vist*/
+ display: block;
+}
+
+#profileLogin {
+ display: none;
+}
+ #profile {
+   display: none;
+ }
+ #loginError {
+   display: none;
+   color: rgb(255, 0, 0);
+ }
+ #userCreated {
+   display: none;
+   color: rgb(0, 255, 0);
+ }
+
+#shop {
+  display: none;
+}
+
+#udvalg {
+  display: none;
+}
+
+#kurser {
+  display: none;
+}
+
+#afrika {
+  display: none;
+}
+
+#om {
+  display: none;
+}
+
+#kontakt {
+  display: none;
+}
+
+#medier {
+  display: none;
+}
+
+
+#linkStyle {
+  border-top: solid;
+  border-width: 1px;
+  border-color: rgb(186, 204, 217);
+}
+
+.topnav #myLinks {
+  display: none;
+  background-color: rgb(206, 224, 237);
+  width: 160px;
+}
+/*kalder alle a tags*/
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.active {
+  background-color: rgb(206, 224, 237);
+  color: black;
+}

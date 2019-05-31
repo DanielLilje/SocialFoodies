@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<link rel = "stylesheet" type = "text/css" href = "index.css" > <!-- linker til css-->
+<script type "text/javascript" src = "index.js" > </script> <!-- link til javascript-->
+<html>
+
+<head>
+<title>Social club</title>
+</head>
+<div class="mobile-container"> <!-- tag der omgrænser vores HTML -->
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <!-- Picture with onclick to hamburger menu -->
+  <a href="#home" id="menuButton" onclick="displayMenu()" class="active"><img src="SocialFoodies_Logo_300-1.png"  alt="Logo" id="logo"></a>
+<!-- hamburgermenu with links  -->
+  <div id="myLinks">
+   <a id="linkStyle" href="#news" onclick="changeTab(0)">News</a>
+   <div id="loginMenu"><a id="linkStyle" href="#profilelogin" onclick="changeTab(1)">Login</a></div>
+   <a id="linkStyle" href="#shop" onclick="changeTab(2)">Shop</a>
+   <a id="linkStyle" href="#udvalg" onclick="changeTab(3)">Udvalg</a>
+	 <a id="linkStyle" href="#kurser" onclick="changeTab(4)">Kurser</a>
+	 <a id="linkStyle" href="#afrika" onclick="changeTab(5)">Projekter i Afrika</a>
+	 <a id="linkStyle" href="#om" onclick="changeTab(6)">Om os</a>
+	 <a id="linkStyle" href="#kontakt" onclick="changeTab(7)">Kontakt</a>
+	 <a id="linkStyle" href="#medier" onclick="changeTab(8)">Sociale medier</a>
+  </div>
+
+</div>
+<!-- tabs  -->
+<!-- news tab-->
+<div id="news" id="tab">
+  <h3>Headers</h3>
+  <p>News</p>
+  <p>News</p>
+</div>
+<!-- profile and login tab -->
+<div id="profileLogin" id="tab">
+<br></br>
+    <div id="login">
+      <!-- label always showed login error if error on login  -->
+      <label id="usernamepassword">Brugernavn<div id="loginError">Forkert brugernavn og/eller kode</div>
+      </label>
+      <!-- break  -->
+      <br></br>
+      <!-- placeholder for username - and input box for username  -->
+      <input placeholder="Skriv brugernavn" id="username" required>
+      <br></br>
+      <!-- label -->
+      <label id="usernamepassword">Kodeord</label>
+      <br></br>
+      <!-- placeholder for password - and input box for username -->
+      <input placeholder="Skriv kodeord" type="password"  id="password" required>
+      <br></br>
+      <!-- login button calls js login() -->
+      <button onclick="login()">Login</button>
+      <!-- forgot password not made yet -->
+      <span>Glemt <a href="#">kodeord?</a></span>
+    <br></br>
+    <br></br>
+ </div>
+<!-- new user tab -->
+<div id="newUser" id="login">
+      <label>Opret bruger</label>
+      <br></br>
+      <!-- place holder and input for username -->
+      <input placeholder="Brugernavn" id="newUsername" required>
+      <br></br>
+      <label>Vælg kodeord</label>
+      <br></br>
+      <!-- placeholder -->
+      <input placeholder="Kodeord" id="newPassword" required>
+      <br></br>
+      <!-- button calls createrUser function in js -->
+      <button onclick="createUser()">Opret bruger</button>
+</div>
+<!-- div which is shown when user has been created -->
+<div id="userCreated">
+  <!-- header tag text size 2-->
+ <h2> Brugeren er blevet oprettet ✓</h2>
+</div>
+
+
+<!-- div for profile -->
+<div id="profile">
+  <!-- profile name header -->
+  <h2 id=profileName></h2>
+  <br></br>
+  <!-- shows money spent -->
+  <label id="moneySpent"> Totalt beløb 0kr. Penge til afrika i alt 0kr</label>
+</div>
+
+</div>
+<!-- shop tab-->
+<div id="shop" id="tab">
+  <!-- products -->
+  <h3>Produkter.</h3>
+ <!-- products with buttons that call the shop function with values -->
+  <div id="bananis">
+    <label id="product">Banan is 1L. 60kr »</label> <button onclick='shop(false, 0, -1)'>-</button> <label id=product1>0</label> <button onclick='shop(false, 0, 1)'>+</button>
+  </div>
+  <br></br>
+  <div id="Chokoladebar">
+    <label id="product">Chokolade bar. 22kr »</label> <button onclick='shop(false, 1, -1)'>-</button> <label id=product2>0</label> <button onclick='shop(false, 1, 1)'>+</button>
+    <br></br>
+    <!-- buy button calls shop function-->
+    <button onclick="shop(true, false, 0)">køb</button>
+      <label id="moneySpentNow"></label>
+  </div>
+</div>
+<!-- tab -->
+<div id="udvalg" id="tab">
+  <h3>Headers</h3>
+  <!-- paragraph tag-->
+  <p>News</p>
+  <p>News</p>
+</div>
+
+<!-- tab -->
+<div id="kurser" id="tab">
+  <h3>Headers</h3>
+  <p>News</p>
+  <p>News</p>
+</div>
+<!-- tab -->
+<div id="afrika" id="tab">
+  <h3>Headers</h3>
+  <p>News</p>
+  <p>News</p>
+</div>
+<!-- tab -->
+<div id="om" id="tab">
+  <h3>Headers</h3>
+  <p>News</p>
+  <p>News</p>
+</div>
+<!-- tab -->
+<div id="kontakt" id="tab">
+  <h3>Headers</h3>
+  <p>News</p>
+  <p>News</p>
+</div>
+<!-- tab -->
+<div id="medier" id="tab">
+  <h3>Headers</h3>
+  <p>News</p>
+  <p>News</p>
+</div>
+<!-- End smartphone / tablet look -->
+</div>
+
+</html>
